@@ -1,0 +1,129 @@
+/*====================================
+=            theme styles            =
+====================================*/
+
+
+
+/* =Typography */
+body {
+	color: $color-text;
+	font: #{$base-font-size}/#{$baseline} $font-1;
+}
+
+p {
+	a {
+		color: $color-text;
+		background: #EEE;
+		border-radius: 5px;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, {
+	margin-bottom: 1.3125rem;
+	color: $color-text;
+	font-family: $font-2;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 3.375rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+h2 {
+	font-size: 2.25rem;
+	font-weight: bold;
+}
+h3 {
+	font-size: 1.8rem;
+	color: $color-light-text;
+}
+h4 {
+	font-size: 1rem;
+	font-weight: bold;
+}
+h5 {
+	font-family: $font-1;
+	font-size: .75rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+h6 {
+	font-family: $font-1;
+	font-size: .444rem;
+}
+
+blockquote cite {
+	color: $color-light-text;
+}
+
+h1.text-on-dark {
+	color: $color-text-reversed;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+p.text-on-dark, h2.text-on-dark {
+	color: $color-text-reversed;
+}
+
+/* =Layout */
+.t-margin {
+	margin-bottom: $general-margin;
+}
+.t-padding {
+	padding-bottom: $general-margin;
+}
+
+/* =Header */
+
+header a {
+	color: $color-text;
+	font-family: $font-2;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+	
+}
+
+/* =Main */
+
+.background-color {
+	background: $color-dark-banner;
+}
+
+.border-line {
+	border: 1px solid $color-light-text;
+	// @include border-radius(5px);
+}
+
+.fa-cc-paypal{
+	font-size: 7rem;
+	color: #F00C2F;
+}
+.border-bottom {
+	border-bottom: 1px solid $color-hr;
+	// margin: 0 auto;
+	// width: 80%;
+}
+
+.top-margin {
+	margin-top: $general-margin;
+}
+
+
+
+
+
+
+
+
+
+
+
