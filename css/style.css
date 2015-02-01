@@ -763,11 +763,17 @@ blockquote cite {
   color: #8c9296; }
 
 /* =Layout */
-.t-margin {
-  margin-bottom: 61.2px; }
-
 .t-padding {
   padding-bottom: 61.2px; }
+
+.top-margin {
+  margin-top: 61.2px; }
+
+.top-margin-x2 {
+  margin-top: 122.4px; }
+
+.bottom-margin {
+  margin-bottom: 61.2px; }
 
 /* =Header */
 header a {
@@ -796,12 +802,6 @@ header a {
 .border-bottom {
   border-bottom: 1px solid #eeeeee; }
 
-.top-margin {
-  margin-top: 61.2px; }
-
-.top-margin-x2 {
-  margin-top: 122.4px; }
-
 .bg-azzurro,
 .bg-rosso,
 .bg-verde,
@@ -809,4 +809,10 @@ header a {
   border-radius: 15px;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
+  border: 1px solid #454a4e; }
+
+.round-borders {
+  border-radius: 5%;
+  -moz-border-radius: 5%;
+  -webkit-border-radius: 5%;
   border: 1px solid #454a4e; }

@@ -63,11 +63,17 @@ blockquote cite {
 }
 
 /* =Layout */
-.t-margin {
-	margin-bottom: $general-margin;
-}
 .t-padding {
 	padding-bottom: $general-margin;
+}
+.top-margin {
+	margin-top: $general-margin;
+}
+.top-margin-x2 {
+	margin-top: $general-margin * 2;
+}
+.bottom-margin {
+	margin-bottom: $general-margin;
 }
 
 /* =Header */
@@ -110,13 +116,6 @@ header a {
 	// width: 80%;
 }
 
-.top-margin {
-	margin-top: $general-margin;
-}
-.top-margin-x2 {
-	margin-top: $general-margin * 2;
-}
-
 // nav background colors
 .bg-azzurro,
 .bg-rosso,
@@ -125,6 +124,12 @@ header a {
 	border-radius: 15px;
 	-moz-border-radius: 15px;
 	-webkit-border-radius: 15px;
+	border: 1px solid $color-text;
+}
+.round-borders {
+	border-radius: 5%;
+	-moz-border-radius: 5%;
+	-webkit-border-radius: 5%;
 	border: 1px solid $color-text;
 }
 

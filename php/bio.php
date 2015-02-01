@@ -13,6 +13,25 @@
 		</nav>
 	</header> <!-- /header -->
 
+	<!-- RIGHT CONTENT -->
+	<div class="container text-center">
+		<div class="col-2 top-margin">
+			<img class="round-borders bottom-margin" src="../img/alex-small.jpg" height="201" width="300" alt="alex picture">
+		<h3>Alex Sinfarosa</h3>
+		<p>Cornell 2015</p>
+		<blockquote>
+			<p>"It is far better to grasp the Universe as it really is than to persist in delusion, however satisfying and reassuring."<br>
+- Carl Sagan</p>
+		</blockquote>
+		</div>
+		<div class="col-2 top-margin">
+			<h3>A little bit about Alex</h3>
+			<p>Born in Italy, based in New York. Meticoulus and multidisciplinary. I enjoy web design and 
+			creating clean, elegant and intuitive web interfaces. I am a voracious learner, I am learning a trying
+			to master many langueages and tools that would allow me to become a professional web designer/developer.</p>
+		</div>
+	</div>
+
 
 
 

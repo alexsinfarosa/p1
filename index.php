@@ -13,9 +13,9 @@
 
 	<!-- MAIN -->
 	<section class="top-margin-x2 text-center">
-		<h1>"Hello, I'm Alex"</h1>
+		<h1>> "Hello, I'm Alex"</h1>
 		<hr class="hr-short">
-		<h3>"Inspiring front &amp; back-end web develper"</h3>
+		<h3>> "Inspiring front &amp; back-end web develper"</h3>
 	</section>
 
 	<!-- SOCIAL ICONS -->
