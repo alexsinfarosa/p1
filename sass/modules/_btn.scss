@@ -3,9 +3,22 @@
 ======================================*/
 
 
-.btn {
-	height: 50px;
-	width: 100px;
-	font-size: $base-font-size;
-	color: $color-btn-primary;
+.btn-primary {
+	background-color: $color-btn-secondary;
+	border-radius: 6px;
+	border:1px solid $color-btn-secondary;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: $font-1;
+	font-size: 1.1rem;
+	font-weight: bold;
+	padding: 6px 34px;
+	text-decoration:none;
+	text-shadow: 0px 1px 0px $color-btn-secondary;
 }
+.btn-primary:hover {
+	
+}
+
+

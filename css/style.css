@@ -42,6 +42,22 @@
   margin-left: auto;
   margin-right: auto; }
 
+/* =Layout */
+.t-padding {
+  padding-bottom: 61.2px; }
+
+.top-margin {
+  margin-top: 61.2px; }
+
+.top-margin-x2 {
+  margin-top: 122.4px; }
+
+.bottom-margin {
+  margin-bottom: 61.2px; }
+
+.border-bottom {
+  border-bottom: 1px solid #eeeeee; }
+
 .p-narrow {
   width: 70%;
   margin: 0 auto; }
@@ -80,6 +96,11 @@
   margin: 0 auto;
   max-width: 1200px; }
 
+.container-small {
+  max-width: 40%;
+  min-width: 335px;
+  margin: 0 auto; }
+
 /* Attribute selector */
 [class*='col-'] {
   float: left;
@@ -91,7 +112,8 @@
   float: right; }
 
 /* Clearfix */
-.container:after {
+.container:after,
+.container-small:after {
   content: "";
   display: table;
   clear: both; }
@@ -659,11 +681,19 @@ section ul {
 /*======================================
 =            buttons styles            =
 ======================================*/
-.btn {
-  height: 50px;
-  width: 100px;
-  font-size: 18px;
-  color: #8bc43f; }
+.btn-primary {
+  background-color: #ff5e3e;
+  border-radius: 6px;
+  border: 1px solid #ff5e3e;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 6px 34px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ff5e3e; }
 
 /*================================
 =            carousel            =
@@ -694,13 +724,20 @@ iframe {
 input[type="text"],
 input[type="email"],
 textarea {
+  width: 100%;
+  height: 50px;
+  font-size: 1.3rem;
+  padding: 10px;
   outline: none;
   box-shadow: none !important;
-  border: 1px solid #CCC !important; }
+  border: 1px solid #CCC !important;
+  border-radius: 5px; }
 
-.form-control {
-  height: 50px;
-  font-size: 18px; }
+textarea {
+  height: 100px; }
+
+input[type="radio"] {
+  margin-right: 10px; }
 
 /*=====================================
 =            tables styles            =
@@ -746,8 +783,9 @@ h3 {
   color: #8c9296; }
 
 h4 {
+  margin-bottom: 0;
   font-size: 1rem;
-  font-weight: bold; }
+  letter-spacing: 1px; }
 
 h5 {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -761,19 +799,6 @@ h6 {
 
 blockquote cite {
   color: #8c9296; }
-
-/* =Layout */
-.t-padding {
-  padding-bottom: 61.2px; }
-
-.top-margin {
-  margin-top: 61.2px; }
-
-.top-margin-x2 {
-  margin-top: 122.4px; }
-
-.bottom-margin {
-  margin-bottom: 61.2px; }
 
 /* =Header */
 header a {
@@ -799,8 +824,9 @@ header a {
 .fa-github {
   color: #000; }
 
-.border-bottom {
-  border-bottom: 1px solid #eeeeee; }
+.fa-smile-o {
+  color: #FFDE3D;
+  font-size: 2rem; }
 
 .bg-azzurro,
 .bg-rosso,

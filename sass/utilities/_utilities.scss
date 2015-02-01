@@ -11,6 +11,7 @@
 .clearfix:after {
     clear: both;
 }
+
 // positioning
 .text-left {
 	text-align: left;
@@ -32,11 +33,33 @@
   	margin-left: auto;
   	margin-right: auto;
 }
+
+/* =Layout */
+.t-padding {
+	padding-bottom: $general-margin;
+}
+.top-margin {
+	margin-top: $general-margin;
+}
+.top-margin-x2 {
+	margin-top: $general-margin * 2;
+}
+.bottom-margin {
+	margin-bottom: $general-margin;
+}
+.border-bottom {
+	border-bottom: 1px solid $color-hr;
+	// margin: 0 auto;
+	// width: 80%;	
+}
+
+// narrow paragraph
 .p-narrow {
 	width: 70%;
 	margin: 0 auto;
 }
-// backgound colors
+
+// backgound colors for testing 
 .bg-rosso {
 	background: #FF5E3E;	
 }

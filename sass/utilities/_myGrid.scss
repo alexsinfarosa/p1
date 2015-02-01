@@ -22,6 +22,12 @@
     max-width : 1200px;
     // position: relative; //check 
 }
+
+.container-small {
+    max-width : 40%;
+    min-width: 335px;
+    margin: 0 auto;
+}
  
 /* Attribute selector */
 [class*='col-'] {
@@ -36,7 +42,8 @@
 }
  
 /* Clearfix */
-.container:after {
+.container:after,
+.container-small:after {
   content: "";
   display: table;
   clear: both;

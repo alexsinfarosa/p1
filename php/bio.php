@@ -8,7 +8,7 @@
 				<li><a class="active" href="<?php echo($site_root); ?>/php/bio.php">"Bio",</a></li>
 				<li><a href="<?php echo($site_root); ?>/php/connect.php">"Connect", </a></li>
 
-				<li><a data-icon="a" href="<?php echo($site_root); ?>/index.php"></a></li>
+				<li><a href="<?php echo($site_root); ?>/index.php">"<span class="icon-reply"></span>"</a></li>
 			</ul>
 		</nav>
 	</header> <!-- /header -->

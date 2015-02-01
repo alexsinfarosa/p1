@@ -44,8 +44,10 @@ h3 {
 	color: $color-light-text;
 }
 h4 {
+	margin-bottom: 0;
 	font-size: 1rem;
-	font-weight: bold;
+	// font-weight: bold;
+	letter-spacing: 1px;
 }
 h5 {
 	font-family: $font-1;
@@ -62,19 +64,6 @@ blockquote cite {
 	color: $color-light-text;
 }
 
-/* =Layout */
-.t-padding {
-	padding-bottom: $general-margin;
-}
-.top-margin {
-	margin-top: $general-margin;
-}
-.top-margin-x2 {
-	margin-top: $general-margin * 2;
-}
-.bottom-margin {
-	margin-bottom: $general-margin;
-}
 
 /* =Header */
 
@@ -100,6 +89,7 @@ header a {
 	// @include border-radius(5px);
 }
 
+// Fontawesome ICONS
 .fa {
 	font-size: 3rem;
 }
@@ -109,11 +99,9 @@ header a {
 .fa-github{
 	color: #000;
 }
-
-.border-bottom {
-	border-bottom: 1px solid $color-hr;
-	// margin: 0 auto;
-	// width: 80%;
+.fa-smile-o {
+	color: #FFDE3D;
+	font-size: 2rem;
 }
 
 // nav background colors
@@ -132,6 +120,7 @@ header a {
 	-webkit-border-radius: 5%;
 	border: 1px solid $color-text;
 }
+
 
 
 
