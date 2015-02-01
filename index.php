@@ -1,27 +1,31 @@
-<?php include 'incs/header.php'; ?>	
-	
+<?php include 'incs/header.php'; ?>
+
 	<!-- HEADER -->
-
-
+	<header id="header" class="inline l-header container bg-rosso">
+		<nav class="col-1 text-center ">
+			<ul>
+				<li><a href="<?php echo($site_root); ?>/php/work.php">"Work",</a></li>
+				<li><a href="<?php echo($site_root); ?>/php/bio.php">"Bio",</a></li>
+				<li><a href="<?php echo($site_root); ?>/php/connect.php">"Connect"</a></li>
+			</ul>			
+		</nav>
+	</header> <!-- /header -->
 
 	<!-- MAIN -->
-<section class="container">
-		<div class="col-3 orange">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate maxime facilis repudiandae tempore ipsam illum sunt nam, nihil sint, unde, vero incidunt quam doloremque quod molestiae qui voluptatum ratione adipisci.</p>
+	<section class="top-margin-x2 text-center">
+		<h1>"Hello, I'm Alex"</h1>
+		<hr class="hr-short">
+		<h3>"Inspiring front &amp; back-end web develper"</h3>
+	</section>
+
+	<!-- SOCIAL ICONS -->
+	<section class="top-margin container text-center">
+		<div class="col-1">
+			<ul>
+				<li><a href="https://twitter.com/Alex_Sinfarosa" target="_blank"><i class="fa fa-twitter"></i>,</a></li>
+				<li><a href="https://github.com/alexsinfarosa" target="_blank"><i class="fa fa-github"></i></a></li>
+			</ul>
 		</div>
-		<div class="col-3">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate maxime facilis repudiandae tempore ipsam illum sunt nam, nihil sint, unde, vero incidunt quam doloremque quod molestiae qui voluptatum ratione adipisci.</p>
-		</div>
-		<div class="col-3 orange">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate maxime facilis repudiandae tempore ipsam illum sunt nam, nihil sint, unde, vero incidunt quam doloremque quod molestiae qui voluptatum ratione adipisci.</p>
-		</div>	
-</section>
-
-
-
-
-
-
-
+	</section>
 
 <?php include 'incs/footer.php'; ?>

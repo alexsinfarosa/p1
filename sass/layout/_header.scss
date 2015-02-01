@@ -5,6 +5,7 @@
 
 
 .l-header {
+
 	padding: 2rem;
 
 	.logo {
@@ -19,6 +20,7 @@
 }
 
 a {
+	text-decoration: none;
 	&:hover {
 		color: $color-link-hover;			
 	}
@@ -27,10 +29,29 @@ a {
 nav ul {
 	list-style-type: none;
 	line-height: 3rem;
-	font-size: 2.4rem;
+	font-size: 2rem;
+
+	&:before {
+		content: ".nav {";
+		font-style: italic;
+	}
+	&:after {
+		content: " }";
+		font-style: italic;
+
+	}
 
 	li {
 		display: inline;
-		margin-left: 1em;
+		margin-left: 0.5rem;
+		padding: 0 1rem;
+		line-height: 3rem;
+
+		// border-radius: 15px;
+		// -moz-border-radius: 15px;
+		// -webkit-border-radius: 15px;
+		// border: 1px solid $color-text;
 	}
 }
+
+

@@ -33,7 +33,7 @@ h6, {
 h1 {
 	font-size: 3.375rem;
 	font-weight: bold;
-	text-transform: uppercase;
+	// text-transform: uppercase;
 }
 h2 {
 	font-size: 2.25rem;
@@ -60,15 +60,6 @@ h6 {
 
 blockquote cite {
 	color: $color-light-text;
-}
-
-h1.text-on-dark {
-	color: $color-text-reversed;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-}
-p.text-on-dark, h2.text-on-dark {
-	color: $color-text-reversed;
 }
 
 /* =Layout */
@@ -103,10 +94,16 @@ header a {
 	// @include border-radius(5px);
 }
 
-.fa-cc-paypal{
-	font-size: 7rem;
-	color: #F00C2F;
+.fa {
+	font-size: 3rem;
 }
+.fa-twitter{
+	color: #8BC43F;
+}
+.fa-github{
+	color: #000;
+}
+
 .border-bottom {
 	border-bottom: 1px solid $color-hr;
 	// margin: 0 auto;
@@ -116,6 +113,22 @@ header a {
 .top-margin {
 	margin-top: $general-margin;
 }
+.top-margin-x2 {
+	margin-top: $general-margin * 2;
+}
+
+// nav background colors
+.bg-azzurro,
+.bg-rosso,
+.bg-verde,
+.bg-giallo {
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border: 1px solid $color-text;
+}
+
+
 
 
 

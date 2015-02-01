@@ -2,8 +2,16 @@
 =            utilities            =
 =================================*/
 
-
-
+// clearfix hack
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table; 
+}
+.clearfix:after {
+    clear: both;
+}
+// positioning
 .text-left {
 	text-align: left;
 }
@@ -27,4 +35,21 @@
 .p-narrow {
 	width: 70%;
 	margin: 0 auto;
+}
+// backgound colors
+.bg-rosso {
+	background: #FF5E3E;	
+}
+.bg-verde {
+	background: #8BC43F;
+}
+.bg-azzurro {
+	background: #6BC4E2;	
+}
+.bg-giallo {
+	background: #FFDE3D;	
+}
+
+.active {
+	border-bottom: 2px solid white	
 }

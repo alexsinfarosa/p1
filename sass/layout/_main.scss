@@ -7,3 +7,31 @@
 .l-main {
 
 }
+
+section ul {
+	list-style-type: none;
+	line-height: 3rem;
+	font-size: 1.4rem;
+
+	&:before {
+		content: ".connectTo {";
+		font-style: italic;
+	}
+	&:after {
+		content: " }";
+		font-style: italic;
+
+	}
+
+	li {
+		display: inline;
+		margin-left: 0.5rem;
+		padding: 0 1rem;
+		line-height: 3rem;
+
+		// border-radius: 15px;
+		// -moz-border-radius: 15px;
+		// -webkit-border-radius: 15px;
+		// border: 1px solid $color-text;
+	}
+}
