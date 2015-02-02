@@ -3,7 +3,8 @@
 ======================================*/
 
 
-.btn-primary {
+.btn-primary,
+.exit {
 	background-color: $color-btn-secondary;
 	border-radius: 6px;
 	border:1px solid $color-btn-secondary;
@@ -14,11 +15,17 @@
 	font-size: 1.1rem;
 	font-weight: bold;
 	padding: 6px 34px;
-	text-decoration:none;
+	text-decoration: none;
 	text-shadow: 0px 1px 0px $color-btn-secondary;
 }
-.btn-primary:hover {
-	
+
+.exit {
+	margin: 1em auto;
+	display: block;
+	width: 80%;
 }
+
+
+
 
 

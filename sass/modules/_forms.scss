@@ -28,10 +28,31 @@ textarea {
 }
 
 textarea {
-	height: 100px;
-}
-input[type="radio"] {
-	margin-right: 10px;
+    height: 200px;
+	display: block;
+    text-align: left;
 
 }
+
+input[type="radio"],
+input[type="checkbox"] {
+	margin-left: 20px;
+	
+	&:first-child {
+		margin-left: 0;
+	}
+
+}
+
+.word-container {
+  	display: block;
+    width: 80%;
+    height: auto;
+    margin: 5px auto;
+    font-size: 1em;
+    word-break: break-all;
+    white-space: normal;
+}
+
+
 

@@ -22,6 +22,7 @@
 .text-center {
 	text-align: center;
 }
+
 .align-left {
 	float: left !important
 }
@@ -75,4 +76,9 @@
 
 .active {
 	border-bottom: 2px solid white	
+}
+.required {
+	font-size: 0.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
 }
