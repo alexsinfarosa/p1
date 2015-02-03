@@ -1,12 +1,14 @@
 <?php
 // Start the session
-ob_start();
+// ob_start();
 session_start();
-    $name       = $_SESSION['name'];
-    $email      = $_SESSION['email'];
-    $rating     = $_SESSION['rating'];
-    $profession = $_SESSION['profession'];
-    $message    = $_SESSION['message'];
+    $name           = $_SESSION['name'];
+    $email          = $_SESSION['email'];
+    $rating         = $_SESSION['rating'];
+    $profession     = $_SESSION['profession'];
+    $p_languages    = implode(", ", $_SESSION['p_languages']);
+    $p_languages    = preg_replace("/0,/","", $p_languages);
+    $message        = $_SESSION['message'];
 ?>
 
 <?php include '../incs/header.php'; ?>

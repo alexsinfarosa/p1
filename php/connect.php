@@ -53,13 +53,12 @@ session_start();
         	$rating             = $_SESSION['rating'];
     	}
 
-    	$p_languages = Array();
+    	$p_languages = array();
     	if ( isset($_POST["p_languages"]) ) {
         	$_SESSION['p_languages'] = $_POST["p_languages"];
         	$p_languages             = $_SESSION['p_languages'];
     	}
-    	print_r($p_languages);
-
+  
     	$profession = "";
     	if ( isset($_POST["profession"]) ) {
         	$_SESSION['profession'] = $_POST["profession"];
@@ -71,29 +70,15 @@ session_start();
 	    // Creating email variables
 	    $recipient          = "as898@cornell.edu";
 	    $subject            = "New message: $name";
-	    $body_message       = "From: $name \n Email: $email \n Rating: $rating \n Profession: $profession \n Programming language: $p_languages \n message: $message";
+	    //$body_message       = "From: $name \n Email: $email \n Rating: $rating \n Profession: $profession \n Programming language: $p_languages \n message: $message";
 	    
 	    // Generating the checked attribute to rating radio buttons
 	    $poor		        = ( $rating == "Poor") ? "checked" : "" ;
 	    $ok					= ( $rating == "OK") ? "checked" : "" ;
-	    $cool				= ( $rating == "Cool!") ? "checked" : "" ;
-
-	    // Generating the checked attribute to p_languages checkbox array
-	    foreach ($p_languages as $key => $value) {
-		    $java 				= ( $p_languages == "Java") ? "checked" : "" ;
-		    $php				= ( $p_languages == "php") ? "checked" : "" ;
-		    $javascript			= ( $p_languages == "javascript") ? "checked" : "" ;
-		    $python				= ( $p_languages == "python") ? "checked" : "" ;
-		    $ruby 				= ( $p_languages == "ruby") ? "checked" : "" ;
-		    $c 					= ( $p_languages == "c") ? "checked" : "" ;
-		    $other_lang			= ( $p_languages == "other_lang") ? "checked" : "" ;
-
-			print_r($p_languages[$key]);   
-		} 
-
+	    $cool				= ( $rating == "Cool!") ? "checked" : "" ;  
 
 	    // Generating the select attribute for the dropdown menu - profession
-	    $none     			= ( $profession == "Not Specified") ? "selected" : "" ;
+	    $no_specified     	= ( $profession == "Not Specified") ? "selected" : "" ;
 	    $web_designer     	= ( $profession == "Web Designer") ? "selected" : "" ;
 	    $web_developer  	= ( $profession == "Web Developer") ? "selected" : "" ;
 	    $web_producer   	= ( $profession == "Web Producer") ? "selected" : "" ;
@@ -104,6 +89,11 @@ session_start();
     	if ( isset($_POST["submit"]) ) {
 	        // Remember that there was a submission.
 	        $success = TRUE;
+
+	        if ( !isset($_POST["rating"]) || !$_POST["rating"] ) {
+	        	$rating = "Not Specified";
+	        
+	        }
 
 	        // Make sure no required elements are missing.
 	        if ( $name == "" ) {
@@ -125,8 +115,8 @@ session_start();
 
 	    if ( $success ) {
 	        // email send out
-	        mail($recipient,$subject,$body_message);
-	        add_registered_user($name, $email);
+	        // mail($recipient,$subject,$body_message);          // deselect this
+	        // add_registered_user($name, $email);
 
 	        // Show thank you message on the thank_you.php page
 	        header('Location: thank_you.php');
@@ -166,6 +156,7 @@ session_start();
 				<h4>How do you like this site?</h4>
 			</div>
 			<div class="col-2">
+				<input type="hidden"name="rating" value="None">
 				<input type="radio" name="rating" value="Poor" <?php echo $poor; ?> > Poor 
 				<input type="radio" name="rating" value="OK" <?php echo $ok; ?> > OK 
 				<input type="radio" name="rating" value="Cool!" <?php echo $cool; ?> > Cool!
@@ -173,13 +164,14 @@ session_start();
 
 			<div class="col-1">
 				<h4>What are your favorite programming languages?</h4>
-				<input type="checkbox" name="p_languages[]" value="java" <?php echo $java ?> > Java
-				<input type="checkbox" name="p_languages[]" value="php" <?php echo $php ?> > PHP
-				<input type="checkbox" name="p_languages[]" value="javascript" <?php echo $javascript ?> > Javascript
-				<input type="checkbox" name="p_languages[]" value="python" <?php echo $python ?> > Python
-				<input type="checkbox" name="p_languages[]" value="ruby" <?php echo $ruby ?> > Ruby
-				<input type="checkbox" name="p_languages[]" value="c" <?php echo $c ?> > C
-				<input type="checkbox" name="p_languages[]" value="other_lang" <?php echo $other_lang ?> > Other
+				<input type="hidden"   name="p_languages[]" value="0">
+				<input type="checkbox" name="p_languages[]" value="java"> Java
+				<input type="checkbox" name="p_languages[]" value="php"> PHP
+				<input type="checkbox" name="p_languages[]" value="javascript"> Javascript
+				<input type="checkbox" name="p_languages[]" value="python"> Python
+				<input type="checkbox" name="p_languages[]" value="ruby"> Ruby
+				<input type="checkbox" name="p_languages[]" value="c"> C
+				<input type="checkbox" name="p_languages[]" value="other"> Other
 			</div> <!-- end programming languages --> 
 
 			<div class="col-2">
@@ -187,7 +179,7 @@ session_start();
 			</div>
 			<div class="col-2">
 				<select name="profession">
-					<option value="Not specified" <?php echo $none; ?> ></option>
+					<option value="Not specified" <?php echo $no_specified; ?> ></option>
 					<option value="Web Designer" <?php echo $web_designer; ?> >Web Designer</option>
 					<option value="Web Developer" <?php echo $web_developer; ?> >Web Developer</option>
 					<option value="Web Writer" <?php echo $web_writer; ?> >Web Writer</option>
