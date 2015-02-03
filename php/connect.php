@@ -10,11 +10,11 @@ session_start();
 	<header id="header" class="l-header container bg-verde">
 		<nav class="col-1 text-center ">
 			<ul>
-				<li><a href="<?php echo($site_root); ?>/php/work.php">"Work",</a></li>
 				<li><a href="<?php echo($site_root); ?>/php/bio.php">"Bio",</a></li>
 				<li><a class="active" href="<?php echo($site_root); ?>/php/connect.php">"Connect",</a></li>
+				<li><a href="<?php echo($site_root); ?>/php/when_not_coding.php">"When not coding",</a></li>
 
-				<li><a href="<?php echo($site_root); ?>/index.php">"<span class="icon-reply"></span>"</a></li>
+				<li><a href="<?php echo($site_root); ?>/index.php">"<span class="icon-home-house-streamline"></span>"</a></li>
 			</ul>
 		</nav>
 	</header> <!-- end header -->
@@ -58,14 +58,16 @@ session_start();
         	$_SESSION['p_languages'] = $_POST["p_languages"];
         	$p_languages             = $_SESSION['p_languages'];
     	}
+
+    	foreach ($p_languages as $key => $value) {
+    		echo "value \n";
+    	}
   
     	$profession = "";
     	if ( isset($_POST["profession"]) ) {
         	$_SESSION['profession'] = $_POST["profession"];
         	$profession             = $_SESSION['profession'];
     	}
-
-
 
 	    // Creating email variables
 	    $recipient          = "as898@cornell.edu";
@@ -156,10 +158,10 @@ session_start();
 				<h4>How do you like this site?</h4>
 			</div>
 			<div class="col-2">
-				<input type="hidden"name="rating" value="None">
-				<input type="radio" name="rating" value="Poor" <?php echo $poor; ?> > Poor 
-				<input type="radio" name="rating" value="OK" <?php echo $ok; ?> > OK 
-				<input type="radio" name="rating" value="Cool!" <?php echo $cool; ?> > Cool!
+				<input type="hidden" name="rating" value="None">
+				<input type="radio"  name="rating" value="Poor" <?php echo $poor; ?> > Poor 
+				<input type="radio"  name="rating" value="OK" <?php echo $ok; ?> > OK 
+				<input type="radio"  name="rating" value="Cool!" <?php echo $cool; ?> > Cool!
 			</div> <!-- end radio button site quality --> 
 
 			<div class="col-1">
@@ -179,7 +181,7 @@ session_start();
 			</div>
 			<div class="col-2">
 				<select name="profession">
-					<option value="Not specified" <?php echo $no_specified; ?> ></option>
+					<option value="Not specified" <?php echo $no_specified; ?> >None</option>
 					<option value="Web Designer" <?php echo $web_designer; ?> >Web Designer</option>
 					<option value="Web Developer" <?php echo $web_developer; ?> >Web Developer</option>
 					<option value="Web Writer" <?php echo $web_writer; ?> >Web Writer</option>

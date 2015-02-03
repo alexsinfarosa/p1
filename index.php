@@ -4,9 +4,9 @@
 	<header id="header" class="inline l-header container bg-rosso">
 		<nav class="col-1 text-center ">
 			<ul>
-				<li><a href="<?php echo($site_root); ?>/php/work.php">"Work",</a></li>
 				<li><a href="<?php echo($site_root); ?>/php/bio.php">"Bio",</a></li>
 				<li><a href="<?php echo($site_root); ?>/php/connect.php">"Connect"</a></li>
+				<li><a href="<?php echo($site_root); ?>/php/when_not_coding.php">"When not coding",</a></li>
 			</ul>			
 		</nav>
 	</header> <!-- /header -->
@@ -15,7 +15,7 @@
 	<section class="top-margin-x2 text-center">
 		<h1>> "Hello, I'm Alex"</h1>
 		<hr class="hr-short">
-		<h3>> "Inspiring front &amp; back-end web develper"</h3>
+		<h3>> "Aspiring front &amp; back-end web develper"</h3>
 	</section>
 
 	<!-- SOCIAL ICONS -->

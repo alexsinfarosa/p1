@@ -17,16 +17,17 @@
 
 /* Container */
 .container {
-    max-width : 100%;
+    width : 100%;
     margin: 0 auto;
     max-width : 1200px;
+
     // position: relative; //check 
 }
 
 .container-small {
     max-width : 45%;
     min-width: 335px;
-    margin: 0 auto;
+    margin: $general-margin auto;
 }
  
 /* Attribute selector */

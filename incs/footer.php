@@ -3,7 +3,7 @@
 	<footer class="container">
 		<div class="col-1">
 			<p class="top-margin-x2 text-center">
-				&copy; 2015 | Designed by <span = class="author">Alex Sinfarosa</span>
+				&copy; 2015 | Designed by <span class="author"> Alex Sinfarosa </span>
 			</p>	
 		</div>
 	</footer>

@@ -1,6 +1,6 @@
 <!-- defining root folder variable -->
 <?php $site_root = "/p1"; ?>
-<!--$site_root = "/users/as898sp15/www/p1"; -->
+<!-- $site_root = "/users/as898sp15/www/p1"; -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,8 +17,7 @@
 		<!-- Font Awesome -->
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		
-		<link href="https://fontastic.s3.amazonaws.com/KSpe7QxCzC5fS2tavMwQfQ/icons.css" rel="stylesheet">
-
+		<link href="https://fontastic.s3.amazonaws.com/RkWtkBvDuYjy9UgXdyoPeM/icons.css" rel="stylesheet">
 		<!-- Google Fonts -->
 
 		<!-- Custom Style Sheet -->

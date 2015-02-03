@@ -17,11 +17,11 @@ session_start();
         <header id="header" class="l-header container bg-verde">
             <nav class="col-1 text-center ">
                 <ul>
-                    <li><a href="<?php echo($site_root); ?>/php/work.php">"Work",</a></li>
                     <li><a href="<?php echo($site_root); ?>/php/bio.php">"Bio",</a></li>
                     <li><a class="active" href="<?php echo($site_root); ?>/php/connect.php">"Connect",</a></li>
+                    <li><a href="<?php echo($site_root); ?>/php/when_not_coding.php">"When not coding",</a></li>
 
-                    <li><a href="<?php echo($site_root); ?>/index.php">"<span class="icon-reply"></span>"</a></li>
+                    <li><a href="<?php echo($site_root); ?>/index.php">"<span class="icon-home-house-streamline"></span>"</a></li>
                 </ul>
             </nav>
         </header> <!-- end header -->
