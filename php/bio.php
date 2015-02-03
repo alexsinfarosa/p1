@@ -19,7 +19,7 @@
 		<div class="col-2 top-margin">
 			<img class="round-borders bottom-margin" src="../img/alex-small.jpg" height="200" width="300" alt="alex picture">
 			<h3>Alex Sinfarosa</h3>
-			<p>Cornell 2015</p>
+			<p>Information Science - Cornell 2015</p>
 			<blockquote>
 				<p>"It is far better to grasp the Universe as it really is than to persist in delusion, however satisfying and reassuring."<br>
 				- Carl Sagan</p>

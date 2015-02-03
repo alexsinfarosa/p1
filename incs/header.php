@@ -1,6 +1,6 @@
 <!-- defining root folder variable -->
-<?php $site_root = "/p1"; ?>
-<!-- $site_root = "/users/as898sp15/www/p1"; -->
+<?php //$site_root = "/p1"; ?>
+<?php $site_root = "/users/as898sp15/www/p1"; ?>
 
 <!DOCTYPE html>
 <html lang="en">

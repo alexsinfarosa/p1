@@ -72,7 +72,7 @@ session_start();
 	    // Creating email variables
 	    $recipient          = "as898@cornell.edu";
 	    $subject            = "New message: $name";
-	    //$body_message       = "From: $name \n Email: $email \n Rating: $rating \n Profession: $profession \n Programming language: $p_languages \n message: $message";
+	    $body_message       = "From: $name \n Email: $email \n Rating: $rating \n Profession: $profession \n Programming language: $p_languages \n Message: $message";
 	    
 	    // Generating the checked attribute to rating radio buttons
 	    $poor		        = ( $rating == "Poor") ? "checked" : "" ;
@@ -117,8 +117,8 @@ session_start();
 
 	    if ( $success ) {
 	        // email send out
-	        // mail($recipient,$subject,$body_message);          // deselect this
-	        // add_registered_user($name, $email);
+	        mail($recipient,$subject,$body_message);
+	        add_registered_user($name, $email);
 
 	        // Show thank you message on the thank_you.php page
 	        header('Location: thank_you.php');
