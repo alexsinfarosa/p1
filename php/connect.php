@@ -72,7 +72,7 @@ session_start();
 	    // Creating email variables
 	    $recipient          = "as898@cornell.edu";
 	    $subject            = "New message: $name";
-	    $body_message       = "From: $name \n Email: $email \n Rating: $rating \n Profession: $profession \n Programming language: $p_languages \n Message: $message";
+	    // $body_message       = "From: $name \n Email: $email \n Rating: $rating \n Profession: $profession \n Programming language: $p_languages \n Message: $message";
 	    
 	    // Generating the checked attribute to rating radio buttons
 	    $poor		        = ( $rating == "Poor") ? "checked" : "" ;
